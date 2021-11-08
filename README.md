@@ -23,4 +23,15 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       
    ![Image Walkthrough](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/password.gif)
      
+      
+      
+  <h2> 3. Another Stored XSS </h3>
+      <h4> versions before 4.2.3 are affected</h4>
+     Also discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/wordpress3.html</a> 
+      The following code was inculcated into a post:
+      <a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>
+      Wordpress processes this code into the following form
+       "<a href="</a<a title=" onmouseover=alert('test')  ">link</a
+      ![Image]()
+
 
