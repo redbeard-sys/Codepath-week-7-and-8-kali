@@ -11,7 +11,7 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       <strong> python -c 'print ("A"*65600)' > payload.txt </strong> <br>
   In vim you can open up payload.txt and use ":%+" to copy the entire file and then paste it where the letters go in the anchor tag payload.
       This script will be triggered when the comment is viewed.
-      
+      ![Image Walkthrough](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/XSS.gif)
  
    <h2> 2. Brute Force Login with WPScan and wordlist </h2>
       
