@@ -17,5 +17,10 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       
       WPScan can ennumerate users and generate passwords if you use a wordlist.
       -use command: wpscan --url wpdistillery.vm -passwords passwords.txt
+      -You can see on the left the admin section is open with the list of users
+      -On the write you can see the result of the above command where the users are enumerated with their password.
+      -I log in to user Franz using the results of the wpscan 
+      
+   ![Image Walkthrough](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/password.gif)
      
 
