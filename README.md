@@ -21,17 +21,44 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       -On the write you can see the result of the above command where the users are enumerated with their password.
       -I log in to user Franz using the results of the wpscan 
       
-   ![Image Walkthrough](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/password.gif)
+   ![Image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/password.gif)
      
       
       
   <h2> 3. Another Stored XSS </h3>
       <h4> versions before 4.2.3 are affected</h4>
      Also discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/wordpress3.html</a> 
+      The following XSS attack requires a author or contributor level account.
+      This could be made more malicious if a style tag is added to cover the whole page to force the execution of onmouseover
       The following code was inculcated into a post:
-  ![Image]()
+      
+  ![Image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/linkXSS.gif)
+      
        Wordpress processes this code into the following form
       
-  ![Image Walkhtrough](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/storedXSS.gif)
+  ![Image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/storedXSS.gif)
+      
+      <h2> 4. Youtube stored XSS </h3>
+      
+      Resources below:  
+     
+   [suciri.net](https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html)  
+      
+                  CVE: 2017-6817
+      
+   [cvedetails.com](https://www.cvedetails.com/cve/CVE-2017-6817/)
+      
+      This is a core issue that was not resolved until 4.7.3
+      
+      the xce is an escape sequence to get around the shortcode_parse_atts function.
+      
+      Exploit: requires author or contributor level account.
+      The following input:
+      [embed src='https://www.youtube.com/embed/12345\x3csvg onload=alert("hacked")\x3e'][/embed]
+      will be processed as
+      <p>https://youtube.com/watch?v=12345<svg onload=alert("hacked")></p>
+
+
+
 
 
