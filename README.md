@@ -38,7 +38,7 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       
   ![Image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/storedXSS.gif)
       
-      <h2> 4. Youtube stored XSS </h3>
+  <h2> 4. Youtube stored XSS </h3>
       
       Resources below:  
      
@@ -58,7 +58,7 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       will be processed as
       <p>https://youtube.com/watch?v=12345<svg onload=alert("hacked")></p>
 
-
+![image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/tubeHack.gif)
 
 
 
