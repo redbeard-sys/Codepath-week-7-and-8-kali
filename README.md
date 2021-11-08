@@ -32,6 +32,6 @@ Discovered by Jouko Pynnönen of Klikki Oy  <a href=url>https://klikki.fi/adv/w
       <a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>
       Wordpress processes this code into the following form
        "<a href="</a<a title=" onmouseover=alert('test')  ">link</a
-      ![Image]()
+      ![Image](https://github.com/redbeard-sys/Codepath-week-7-and-8-kali/blob/main/storedXSS.gif)
 
 
